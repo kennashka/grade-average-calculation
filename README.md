@@ -1,6 +1,6 @@
 # grade-average-calculation
 
-Node.js Login App with user login and register functionality.
+calculates the average of three grades.
 
 ### Version
 
