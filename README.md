@@ -1,2 +1,3 @@
-# grade-average-calculation
-# grade-average-calculation
+# Grade-Average-Calculation
+
+A Node.js App that calculates the average of three grades.
