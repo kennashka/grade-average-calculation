@@ -3,37 +3,98 @@
 <head>
 	<title>Grade Calculator</title>
 	  <link rel="stylesheet" href="css/style.css" />
+	  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
 </head>
 <body>
+	<!-- Background Image Wrapper-->
+<div class="backg"> 
+	<!-- Nagivation-->
+   <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Projects
+            </a>
+            <div class="dropdown-menu sm-menu">
+              <a class="dropdown-item" href="https://kennashka.com/calculator">Calculator App</a>
+              <a class="dropdown-item" href="http://www.bitcoinstocktoday.com/"> BTC Stock App</a>
+              <a class="dropdown-item" href="https://kennashka.com/quoteapp">Quote App</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://app.acuityscheduling.com/schedule.php?owner=16888995&notembedded=1">Contact</a>
+          </li>
+
+          </ul>
+          <div class="social-part">
+           <a class="nav-link" href="https://github.com/kennashka/grade-average-calculation"><i class="fa fa-github" aria-hidden="true"></i> </a>
+       </div>
+           <div>
+            <a class="nav-link" href="https://twitter.com/kennashka"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </nav>
+
+<!-- End of Nav-->
 
 
-<div id="thing">
+<div class="container p-5">
+<div class="card w-50 mx-auto bg-light">
+  <div class="card-header bg-primary text-center"> <b>Average/Mean Calculator</b></div>
 
-  	<legend class="legend">Average/Mean Calculator</legend>
+  <div class="card-body">
 
-<div id="divid">
-<label>
-What's Your First Grade?<br><input type="text" id="1" placeholder="Input 1st #"><br>
-What About Your Second Grade?<br> <input type="text" id="2" placeholder="Input 2st #"><br>
-And Third?<br><input type="text" id="3" placeholder="Almost there 3rd #">
-</label>
 
-</div>
-</p>
-<button id="button">Calculate</button>
-<button onclick="myFunction()">Reset</button>
-<p>
+
+	<div class="form-group">
+	    <label>What's Your First Grade?</label>
+	      <input class="form-control" type="text" id="1" placeholder="Input 1st #">
+	</div>
+
+	<div class="form-group">
+	    <label> What About Your Second Grade? </label>
+	      <input class="form-control" type="text" id="2" placeholder="Input 2st #">
+	</div>
+
+	<div class="form-group">
+	      <label>And Third? </label>
+	        <input class="form-control" type="text" id="3" placeholder="Almost there 3rd #">
+	</div>
+
+
+<button class="btn btn-secondary" id="button">Calculate</button>
+<button class="btn btn-secondary" onclick="myFunction()">Reset</button>
+<p class="p-3">
 Calculated Grade: <span id="ans" style="color: green;"></span>
 </p>
 
-<!--try-->
 <div class="wrapper">
 	<p> <span id="an" style="color: green;"></span> <span id="and" style="color: red;"></span></p>
 
-</div>
+</div> <!-- Answer Result Div--> 
 
-</div>
 
+ </div> <!-- card body-->
+
+</div> <!-- card-->
+
+</div> <!--container-->
+
+</div> <!--Background Image-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
+
 </body>
 </html>
